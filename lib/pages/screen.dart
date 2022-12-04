@@ -4,7 +4,7 @@ class ScreenGeneral extends StatelessWidget {
   final String title;
   final String content;
 
-  ScreenGeneral({required this.title, required this.content});
+  const ScreenGeneral({super.key, required this.title, required this.content});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +13,7 @@ class ScreenGeneral extends StatelessWidget {
         title: Text(title),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.more_vert),
+            icon: const Icon(Icons.more_vert),
             onPressed: (){},
           )
 

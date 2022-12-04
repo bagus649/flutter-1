@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AllProduct extends StatelessWidget {
+  const AllProduct({super.key});
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -9,7 +11,7 @@ class AllProduct extends StatelessWidget {
           body: NestedScrollView(
             headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
               return <Widget>[
-                new SliverAppBar(
+                const SliverAppBar(
                   title: Text('Promo'),
                   pinned: true,
                   floating: true,
@@ -34,7 +36,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 75,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -44,7 +46,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -58,9 +60,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Tiket1',
+                          title: const Text('Tiket1',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -69,7 +71,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 75,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -79,7 +81,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -93,9 +95,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Tiket2',
+                          title: const Text('Tiket2',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -104,7 +106,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 75,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -114,7 +116,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -128,9 +130,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Tiket3',
+                          title: const Text('Tiket3',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -139,7 +141,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 75,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -149,7 +151,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -163,9 +165,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Tiket4',
+                          title: const Text('Tiket4',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -174,7 +176,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 75,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -184,7 +186,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -198,9 +200,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Tiket5',
+                          title: const Text('Tiket5',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -213,7 +215,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -223,7 +225,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -237,9 +239,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Hotel1',
+                          title: const Text('Hotel1',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -248,7 +250,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -258,7 +260,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -272,9 +274,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Hotel2',
+                          title: const Text('Hotel2',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -283,7 +285,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -293,7 +295,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -307,9 +309,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Hotel3',
+                          title: const Text('Hotel3',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -318,7 +320,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -328,7 +330,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -342,9 +344,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Hotel4',
+                          title: const Text('Hotel4',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -353,7 +355,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -363,7 +365,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -377,9 +379,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Hotel5',
+                          title: const Text('Hotel5',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -393,7 +395,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -403,7 +405,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -417,9 +419,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Experience1',
+                          title: const Text('Experience1',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -428,7 +430,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -438,7 +440,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -452,9 +454,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Experience2',
+                          title: const Text('Experience2',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -463,7 +465,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -473,7 +475,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -487,9 +489,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Experience3',
+                          title: const Text('Experience3',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -498,7 +500,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -508,7 +510,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -522,9 +524,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Experience4',
+                          title: const Text('Experience4',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),
@@ -533,7 +535,7 @@ class AllProduct extends StatelessWidget {
                     Container(
                       width: double.infinity,
                       height: 80,
-                      margin: EdgeInsets.only(bottom: 3),
+                      margin: const EdgeInsets.only(bottom: 3),
                       decoration: BoxDecoration(
                         color: Colors.teal,
                         border: Border.all(color: Colors.blue),
@@ -543,7 +545,7 @@ class AllProduct extends StatelessWidget {
                             color: Colors.blue.withOpacity(0.5),
                             spreadRadius: 7,
                             blurRadius: 10,
-                            offset: Offset(0, 6), // changes position of shadow
+                            offset: const Offset(0, 6), // changes position of shadow
                           ),
                         ],
                       ),
@@ -557,9 +559,9 @@ class AllProduct extends StatelessWidget {
                           //       Image.network("https://th.bing.com/th/id/OIP.Mlem1bysvbLaoCm5PuJAqQHaHa?pid=ImgDet&rs=1",height: 9000,width: 9000,),
                           //     )
                           // ),
-                          title: Text('Experience5',
+                          title: const Text('Experience5',
                             style: TextStyle(fontSize: 20),),
-                          subtitle: Text('Rp 100.000',
+                          subtitle: const Text('Rp 100.000',
                               style: TextStyle(fontSize: 20)),
                           onTap: (){},
                         ),

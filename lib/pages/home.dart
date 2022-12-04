@@ -1,27 +1,22 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter/material.dart';
-import 'package:untitled2/BottomNav/halam1.dart';
+import 'package:untitled2/BottomNav/halaman1.dart';
 import 'package:untitled2/BottomNav/halaman2.dart';
 import 'package:untitled2/BottomNav/halaman3.dart';
-import 'package:untitled2/BottomNav/halaman4.dart';
-import 'package:untitled2/BottomNav/halaman5.dart';
-import '../components/additionalMenu.dart';
-import '../components/cardAccount.dart';
-import '../components/mainMenu.dart';
-import '../components/promotion.dart';
 
 class Home extends StatefulWidget {
+  const Home({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _HomeState createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
-    MenuSatu(),
-    MenuDua(),
-    MenuTiga(),
+    const MenuSatu(),
+    const MenuDua(),
+    const MenuTiga(),
     // MenuEmpat(),
     // MenuLima(),
   ];
@@ -39,35 +34,26 @@ class _HomeState extends State<Home> {
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _currentIndex,
           onTap: onBarTapped,
-          items: [
+          items: const [
             BottomNavigationBarItem(
-              icon: new Icon(
+              icon: Icon(
                 Icons.home,
                 color: Colors.grey,
               ),
               label: 'Menu Utama',
             ),
             BottomNavigationBarItem(
-                icon: new Icon(
+                icon: Icon(
                   Icons.event_note_outlined,
                   color: Colors.grey,
                 ),
                 label: 'Pesanan'),
             BottomNavigationBarItem(
-                icon: new Icon(
+                icon: Icon(
                   Icons.person,
                   color: Colors.grey,
                 ),
                 label: 'Akun'),
-
-            // BottomNavigationBarItem(
-            //     icon: new Icon(Icons.folder_copy_rounded),
-            //     label: 'Simpanan'
-            // ),
-            // BottomNavigationBarItem(
-            //     icon: new Icon(Icons.person),
-            //     label: 'Akun'
-            // ),
           ],
         ),
       ),

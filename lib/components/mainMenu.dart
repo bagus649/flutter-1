@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
 import '../pages/allProduct.dart';
 import '../pages/screen.dart';
 
 List<MainMenuItem> mainMenuItem = [
 
-  MainMenuItem(
+  const MainMenuItem(
     title:'Flights',
     icon: Icons.flight,
     colorBox: Colors.blue,
@@ -13,7 +12,7 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle: 'Search Flights',
     screenContent: 'Pencarian Penerbangan', screenWidget: CircleAvatar(),
   ),
-  MainMenuItem(
+  const MainMenuItem(
     title:'Hotels',
     icon: Icons.hotel,
     colorBox: Colors.blue,
@@ -21,7 +20,7 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle: 'Search Hotels',
     screenContent: 'Pencarian Hotel', screenWidget: CircleAvatar(),
   ),
-  MainMenuItem(
+  const MainMenuItem(
     title:'Flight + Hotel',
     icon: Icons.flight_land,
     colorBox: Colors.purple,
@@ -29,7 +28,7 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle: 'Search Flight + Hotel',
     screenContent: 'Pencarian Pesawan + Hotel', screenWidget: CircleAvatar(),
   ),
-  MainMenuItem(
+  const MainMenuItem(
     title:'Attractions & Activities',
     icon: Icons.local_play,
     colorBox: Colors.green,
@@ -37,7 +36,7 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle: 'Attractions & Activities',
     screenContent: 'Aktivitas', screenWidget: CircleAvatar(),
   ),
-  MainMenuItem(
+  const MainMenuItem(
     title:'Eats',
     icon: Icons.local_dining,
     colorBox: Colors.orange,
@@ -45,7 +44,7 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle: 'Search Food',
     screenContent: 'Makanan', screenWidget: CircleAvatar(),
   ),
-  MainMenuItem(
+  const MainMenuItem(
     title:'Trains',
     icon: Icons.train,
     colorBox: Colors.orange,
@@ -53,7 +52,7 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle: 'Search Train',
     screenContent: '', screenWidget: CircleAvatar(),
   ),
-  MainMenuItem(
+  const MainMenuItem(
     title:'Bus & Shuttle',
     icon: Icons.directions_bus,
     colorBox: Colors.green,
@@ -61,7 +60,7 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle: 'Search Bus & Shuttle',
     screenContent: '', screenWidget: CircleAvatar(),
   ),
-  MainMenuItem(
+  const MainMenuItem(
     title:'Airport Transfer',
     icon: Icons.hotel,
     colorBox:Colors.blue,
@@ -69,7 +68,7 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle: 'Search Airport Transfer',
     screenContent: '', screenWidget: CircleAvatar(),
   ),
-  MainMenuItem(
+  const MainMenuItem(
     title:'Car Rental',
     icon: Icons.hotel,
     colorBox: Colors.green,
@@ -87,6 +86,8 @@ List<MainMenuItem> mainMenuItem = [
 ];
 
 class MainMenu extends StatelessWidget {
+  const MainMenu({super.key});
+
   @override
   Widget build(BuildContext context) {
     return GridView.count(
@@ -106,7 +107,7 @@ class MainMenuItem extends StatelessWidget {
   final Color colorBox, iconColor;
   final Widget screenWidget;
 
-  MainMenuItem({required this.title, required this.icon, required this.colorBox, required this.iconColor, required this.screenTitle, required this.screenContent, required this.screenWidget});
+  const MainMenuItem({super.key, required this.title, required this.icon, required this.colorBox, required this.iconColor, required this.screenTitle, required this.screenContent, required this.screenWidget});
 
   @override
   Widget build(BuildContext context) {
@@ -124,6 +125,7 @@ class MainMenuItem extends StatelessWidget {
             onPressed: (){
               Route route = MaterialPageRoute(
                 builder: (context){
+                  // ignore: unnecessary_null_comparison
                   if(screenWidget == null){
                     return ScreenGeneral(
                       title: screenTitle,
@@ -141,7 +143,7 @@ class MainMenuItem extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(top: 2.0,),
-          child: Text(title, style: TextStyle(fontSize: 12.0), textAlign: TextAlign.center,),
+          child: Text(title, style: const TextStyle(fontSize: 12.0), textAlign: TextAlign.center,),
         )
       ],
     );

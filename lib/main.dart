@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:untitled2/pages/screen.dart';
-
 import 'pages/account.dart';
 import 'pages/booking.dart';
 import 'pages/home.dart';
 import 'pages/inbox.dart';
 import 'pages/saved.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -18,26 +18,25 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: MyHomePage(title: 'Traveloka', key: null,),
-      // home: MyHomePage (key: ValueKey, title: title),
-      home: Home(),
+      home: const Home(),
 
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({required Key key, required this.title}) : super(key: key);
+  const MyHomePage({required Key key, required this.title}) : super(key: key);
 
   final String title;
   @override
+  // ignore: library_private_types_in_public_api
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   final _layoutPage = [
-    Home(),
+    const Home(),
     Saved(),
     Booking(),
     Inbox(),
@@ -59,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
           type: BottomNavigationBarType.fixed,
           fixedColor: Colors.blue[900],
           onTap: _onTabItem,
-          items: <BottomNavigationBarItem>[
+          items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
               // title: Text('Home')
